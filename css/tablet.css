@@ -1,9 +1,18 @@
-@media screen and (min-width: 768px) {
-    .section {
-        max-width: 768px;
-        /* padding: 120px 0px; */
+@media (min-width: 769px) and (max-width: 1440px) {
+    .hero {
+        background-image: var(--bg-hero-gradient), url(../images/main/hero-bg-desktop.jpg);
     }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--bg-hero-gradient), url(../images/main/hero-bg-desktop-2x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
@@ -18,11 +27,8 @@
 
     /* -----Header----- */
 
-    .header-section {
-        max-width: 768px;
+    .header {
         padding-bottom: 0;
-        margin: 0 auto;
-        border: 0;
     }
 
     .header-logo {
@@ -86,19 +92,7 @@
     /* -----Hero----- */
 
     .hero {
-        width: 768px;
-        max-width: 768px;
-        height: 436px;
         padding-bottom: 108px;
-        background-image: var(--bg-hero-gradient), url(../images/main/hero-bg-desktop.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: var(--bg-hero-gradient), url(../images/main/hero-bg-desktop-2x.jpg);
-        }
     }
 
     .hero-title {
@@ -130,7 +124,6 @@
 
     .team-item {
         width: calc((100% - 24px) / 2);
-        /* width: 100%; */
     }
 
     /* -----Customers----- */
@@ -144,6 +137,30 @@
 
     .customers-icon {
         width: 104px;
+    }
+
+    /* -----Gallery----- */
+
+    .gallery {
+        padding: 64px 0px 96px;
+    }
+
+    .filter-list {
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+
+    .gallery-list {
+        row-gap: 72px;
+    }
+
+    .gallery-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .thumb {
+        width: 356px;
     }
 
     /* -----Footer----- */
@@ -176,5 +193,10 @@
         width: 264px;
     }
 
-
+    /*-----Modal window-----*/
+    .modal {
+        width: 408px;
+        height: 586px;
+        padding: 72px 24px;
+    }
 }
