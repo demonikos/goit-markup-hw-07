@@ -146,6 +146,7 @@
     }
 
     .filter-list {
+        max-width: 100%;
         justify-content: center;
         gap: 24px;
         margin-bottom: 64px;
@@ -180,7 +181,6 @@
 
     .subscribe-form {
         flex-direction: row;
-        /* gap: 24px; */
         align-items: flex-end;
         flex-wrap: nowrap;
     }
