@@ -554,7 +554,7 @@ button {
 /* -----Our Team----- */
 
 .team {
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     padding-bottom: 128px;
 }
 

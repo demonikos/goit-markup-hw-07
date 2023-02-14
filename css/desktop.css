@@ -1,6 +1,6 @@
 @media (min-width: 1441px) {
     .hero-bg {
-        background-color: var(--light-color);
+        background-color: var(--dark-color);
     }
 
     .hero {
