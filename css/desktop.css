@@ -1,7 +1,14 @@
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
+    .hero-bg {
+        background-color: var(--light-color);
+    }
+
     .hero {
         background-image: var(--bg-hero-gradient), url(../images/main/hero-bg-desktop.jpg);
+        background-size: contain;
+        max-width: 1440px;
     }
+
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
